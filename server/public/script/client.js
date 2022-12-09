@@ -6,6 +6,7 @@ function onReady(){
     $('#subtract').on('click', subtractButton)
     $('#multiply').on('click', multiplyButton)
     $('#divide').on('click', divideButton)
+    $('#clearInput').on('click', clearInputs)
 }
 let add = '+'
 let subtract = '-'
@@ -21,6 +22,10 @@ let objectArray = [
     },
     
 ]
+function clearInputs(){
+    $('#inputOne').val('')
+    $('#inputTwo').val('')
+}
 function renderHistory(array){
     $('#calculatorHistory').empty();
     for(let i = 0; i < array.length; i++){
