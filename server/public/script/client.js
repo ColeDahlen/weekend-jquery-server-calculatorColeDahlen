@@ -36,7 +36,6 @@ function renderHistory(array){
     }
 }
 function equalsButton(){
-    let test = 'test';
     let inputPlayer1 = $('#inputOne').val()
     let inputPlayer2 = $('#inputTwo').val()
     objectArray[0].input1 = inputPlayer1
